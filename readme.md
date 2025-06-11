@@ -36,9 +36,12 @@ npm run web
 
 ### 5. Open Browser
 Visit: **http://localhost:3000**
+You should see this: 
+<img width="1440" alt="Screenshot 2025-06-11 at 4 49 48 PM" src="https://github.com/user-attachments/assets/d3197f00-6540-4ccb-8717-f745409cbf4e" />
 
 
 ```
+
 
 ## 🔧 Available Scripts
 
@@ -81,6 +84,8 @@ npm run setup-claude
 ### 3. Restart Claude Desktop
 
 **Important**: Completely quit and restart Claude Desktop (not just close the window).
+You should see that rent roll is integraged:<img width="1215" alt="PNG image 2" src="https://github.com/user-attachments/assets/75a80008-bdc6-4a3c-b5cf-3c5868740075" />
+
 
 ### 4. Test the Connection
 
