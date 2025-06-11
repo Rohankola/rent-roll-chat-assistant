@@ -21,20 +21,58 @@ npm install
 # Add your OpenAI API key
 echo "OPENAI_API_KEY=your-openai-key-here" > .env
 ```
+# 🏢 Rent Roll Chat Assistant
 
-### 3. Load Your Data
+A conversational AI interface for rental property data analysis. Chat naturally about your rent roll data using the Model Context Protocol (MCP) - just like Claude Desktop!
+
+## ✨ Features
+
+- **Natural Language Queries** - Ask anything about your rental data
+- **Smart SQL Generation** - AI automatically writes database queries
+- **MCP Integration** - Uses Model Context Protocol for data access
+- **Zero Hardcoding** - Handles any question dynamically
+
+## 🚀 Quick Start
+
+### 1. Install Dependencies
+```bash
+npm install
+```
+
+### 2. Setup Environment
+```bash
+# Add your OpenAI API key
+echo "OPENAI_API_KEY=your-openai-key-here" > .env
+```
+
+### 3. Prepare Your Data
+
+#### If you have CSV data:
+```bash
+# Convert CSV to JSONL format
+tsx Rent_Roll_jsonl.ts your-rent-roll.csv output.jsonl
+```
+
+#### If you already have JSONL:
+```bash
+# Load JSONL data into SQLite database
+tsx db.ts load-jsonl output.jsonl
+```
+
+
+### 4. Load Your Data
 ```bash
 # Load rent roll data into SQLite database
 npm run load-data
 ```
 
-### 4. Start Chat Interface
+### 5. Start Chat Interface
 ```bash
 # Start the conversational interface
 npm run web
 ```
 
-### 5. Open Browser
+### 6. Open Browser
 Visit: **http://localhost:3000**
 You should see this: 
 <img width="1440" alt="Screenshot 2025-06-11 at 4 49 48 PM" src="https://github.com/user-attachments/assets/d3197f00-6540-4ccb-8717-f745409cbf4e" />
